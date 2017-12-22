@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>my-project</title>
+	<link rel="stylesheet" href="style.css">
+	<!-- jquery for Bootstrap -->
+	<script
+	src="https://code.jquery.com/jquery-3.1.1.min.js"
+	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	crossorigin="anonymous"></script>
+
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+	<!-- font awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+
+	<div id="app">
+
+		<header>
+			<div class="header-wrapper">
+				<img src="http://acmelogos.com/images/logo-8.svg" class="logo">
+				<nav>
+					<router-link to="/brands">+ ToDoList</router-link>
+					<router-link to="/blog" class="active-grey">+ Блог</router-link>
+					<router-link to="/projects">+ Проекты</router-link>
+					<router-link to="/contacts">+ Контакты</router-link>
+				</nav>
+
+			</div>
+		</header>
+
+		<router-view></router-view>	
+	</div>
+
+	<script src="/dist/build.js"></script>
+</body>
+</html>
